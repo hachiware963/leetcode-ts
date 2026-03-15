@@ -1,19 +1,27 @@
 interface Case {
-  input: string[];
+  input: {
+    strs: string[];
+  };
   expected: string[][];
 }
 
 export const testCases: Case[] = [
   {
-    input: ["eat", "tea", "tan", "ate", "nat", "bat"],
+    input: {
+      strs: ["eat", "tea", "tan", "ate", "nat", "bat"],
+    },
     expected: [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]],
   },
   {
-    input: [""],
+    input: {
+      strs: [""],
+    },
     expected: [[""]],
   },
   {
-    input: ["a"],
+    input: {
+      strs: ["a"],
+    },
     expected: [["a"]],
   },
 ];

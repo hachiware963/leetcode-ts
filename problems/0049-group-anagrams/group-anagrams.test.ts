@@ -27,7 +27,7 @@ describe("49. Group Anagrams", () => {
         const caseLabel = `Case ${index + 1}`;
 
         it(`passes ${caseLabel}`, () => {
-          const result = solution.solve(testCase.input);
+          const result = solution.solve(testCase.input.strs);
           expect(normalizeGroups(result)).toEqual(
             normalizeGroups(testCase.expected),
           );

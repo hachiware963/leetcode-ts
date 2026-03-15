@@ -15,7 +15,7 @@ describe("217. Contains Duplicate", () => {
         const caseLabel = `Case ${index + 1}`;
 
         it(`passes ${caseLabel}`, () => {
-          const result = solution.solve(testCase.input);
+          const result = solution.solve(testCase.input.nums);
 
           expect(result).toBe(testCase.expected);
         });

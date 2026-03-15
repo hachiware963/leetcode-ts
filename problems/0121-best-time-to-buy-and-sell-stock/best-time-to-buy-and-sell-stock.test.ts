@@ -15,7 +15,7 @@ describe("121. Best Time to Buy and Sell Stock", () => {
         const caseLabel = `Case ${index + 1}`;
 
         it(`passes ${caseLabel}`, () => {
-          const result = solution.solve(testCase.input);
+          const result = solution.solve(testCase.input.prices);
           expect(result).toBe(testCase.expected);
         });
       }

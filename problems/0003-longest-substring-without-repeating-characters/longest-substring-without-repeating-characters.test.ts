@@ -15,7 +15,7 @@ describe("3. Longest Substring Without Repeating Characters", () => {
         const caseLabel = `Case ${index + 1}`;
 
         it(`passes ${caseLabel}`, () => {
-          const result = solution.solve(testCase.input);
+          const result = solution.solve(testCase.input.s);
           expect(result).toBe(testCase.expected);
         });
       }

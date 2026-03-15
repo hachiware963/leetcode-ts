@@ -1,27 +1,39 @@
 interface Case {
-  input: string;
+  input: {
+    s: string;
+  };
   expected: boolean;
 }
 
 export const testCases: Case[] = [
   {
-    input: "()",
+    input: {
+      s: "()",
+    },
     expected: true,
   },
   {
-    input: "()[]{}",
+    input: {
+      s: "()[]{}",
+    },
     expected: true,
   },
   {
-    input: "(]",
+    input: {
+      s: "(]",
+    },
     expected: false,
   },
   {
-    input: "([])",
+    input: {
+      s: "([])",
+    },
     expected: true,
   },
   {
-    input: "([)]",
+    input: {
+      s: "([)]",
+    },
     expected: false,
   },
 ];

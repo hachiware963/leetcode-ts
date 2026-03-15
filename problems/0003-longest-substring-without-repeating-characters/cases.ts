@@ -1,19 +1,27 @@
 interface Case {
-  input: string;
+  input: {
+    s: string;
+  };
   expected: number;
 }
 
 export const testCases: Case[] = [
   {
-    input: "abcabcbb",
+    input: {
+      s: "abcabcbb",
+    },
     expected: 3,
   },
   {
-    input: "bbbbb",
+    input: {
+      s: "bbbbb",
+    },
     expected: 1,
   },
   {
-    input: "pwwkew",
+    input: {
+      s: "pwwkew",
+    },
     expected: 3,
   },
 ];

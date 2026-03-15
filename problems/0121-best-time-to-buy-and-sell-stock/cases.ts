@@ -1,15 +1,21 @@
 interface Case {
-  input: number[];
+  input: {
+    prices: number[];
+  };
   expected: number;
 }
 
 export const testCases: Case[] = [
   {
-    input: [7, 1, 5, 3, 6, 4],
+    input: {
+      prices: [7, 1, 5, 3, 6, 4],
+    },
     expected: 5,
   },
   {
-    input: [7, 6, 4, 3, 1],
+    input: {
+      prices: [7, 6, 4, 3, 1],
+    },
     expected: 0,
   },
 ];

@@ -21,7 +21,7 @@ describe("238. Product of Array Except Self", () => {
         const caseLabel = `Case ${index + 1}`;
 
         it(`passes ${caseLabel}`, () => {
-          const result = solution.solve(testCase.input);
+          const result = solution.solve(testCase.input.nums);
           expect(normalizeArray(result)).toEqual(
             normalizeArray(testCase.expected),
           );
